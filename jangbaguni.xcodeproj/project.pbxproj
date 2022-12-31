@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BC2C31FEBF41C65CD8E046F /* Pods_jangbaguni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A00B28FE2AB8B384B96CDB /* Pods_jangbaguni.framework */; };
 		CBD804DF2960488E006E157B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804DE2960488E006E157B /* AppDelegate.swift */; };
 		CBD804E12960488E006E157B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804E02960488E006E157B /* SceneDelegate.swift */; };
 		CBD804E32960488E006E157B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804E22960488E006E157B /* ViewController.swift */; };
-		CBD804E62960488E006E157B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD804E42960488E006E157B /* Main.storyboard */; };
 		CBD804E82960488F006E157B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD804E72960488F006E157B /* Assets.xcassets */; };
 		CBD804EB2960488F006E157B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD804E92960488F006E157B /* LaunchScreen.storyboard */; };
+		CBD804F329604947006E157B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD804F229604947006E157B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7A00B28FE2AB8B384B96CDB /* Pods_jangbaguni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jangbaguni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE46F30A9F7D6D9921045CCD /* Pods-jangbaguni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jangbaguni.release.xcconfig"; path = "Target Support Files/Pods-jangbaguni/Pods-jangbaguni.release.xcconfig"; sourceTree = "<group>"; };
 		CBD804DB2960488E006E157B /* jangbaguni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jangbaguni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD804DE2960488E006E157B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD804E02960488E006E157B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBD804E22960488E006E157B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBD804E52960488E006E157B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD804E72960488F006E157B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD804EA2960488F006E157B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD804EC2960488F006E157B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD804F229604947006E157B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC307EEFDB93292EDAE74FA9 /* Pods-jangbaguni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jangbaguni.debug.xcconfig"; path = "Target Support Files/Pods-jangbaguni/Pods-jangbaguni.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC2C31FEBF41C65CD8E046F /* Pods_jangbaguni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B82EB1AEF9B743F15AF2D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC307EEFDB93292EDAE74FA9 /* Pods-jangbaguni.debug.xcconfig */,
+				BE46F30A9F7D6D9921045CCD /* Pods-jangbaguni.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		13728458335CF7327D00FE7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7A00B28FE2AB8B384B96CDB /* Pods_jangbaguni.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBD804D22960488D006E157B = {
 			isa = PBXGroup;
 			children = (
 				CBD804DD2960488E006E157B /* jangbaguni */,
 				CBD804DC2960488E006E157B /* Products */,
+				0B82EB1AEF9B743F15AF2D27 /* Pods */,
+				13728458335CF7327D00FE7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +80,10 @@
 		CBD804DD2960488E006E157B /* jangbaguni */ = {
 			isa = PBXGroup;
 			children = (
+				CBD804F229604947006E157B /* GoogleService-Info.plist */,
 				CBD804DE2960488E006E157B /* AppDelegate.swift */,
 				CBD804E02960488E006E157B /* SceneDelegate.swift */,
 				CBD804E22960488E006E157B /* ViewController.swift */,
-				CBD804E42960488E006E157B /* Main.storyboard */,
 				CBD804E72960488F006E157B /* Assets.xcassets */,
 				CBD804E92960488F006E157B /* LaunchScreen.storyboard */,
 				CBD804EC2960488F006E157B /* Info.plist */,
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBD804EF2960488F006E157B /* Build configuration list for PBXNativeTarget "jangbaguni" */;
 			buildPhases = (
+				11175BB762DA208559B43DD8 /* [CP] Check Pods Manifest.lock */,
 				CBD804D72960488E006E157B /* Sources */,
 				CBD804D82960488E006E157B /* Frameworks */,
 				CBD804D92960488E006E157B /* Resources */,
+				D614032313454133F643355C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD804EB2960488F006E157B /* LaunchScreen.storyboard in Resources */,
+				CBD804F329604947006E157B /* GoogleService-Info.plist in Resources */,
 				CBD804E82960488F006E157B /* Assets.xcassets in Resources */,
-				CBD804E62960488E006E157B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11175BB762DA208559B43DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jangbaguni-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D614032313454133F643355C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBD804D72960488E006E157B /* Sources */ = {
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBD804E42960488E006E157B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBD804E52960488E006E157B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBD804E92960488F006E157B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +342,7 @@
 		};
 		CBD804F02960488F006E157B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC307EEFDB93292EDAE74FA9 /* Pods-jangbaguni.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +351,11 @@
 				DEVELOPMENT_TEAM = TQX48B3375;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = jangbaguni/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "장바구니";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +363,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hoonjoo.jangbaguni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CBD804F12960488F006E157B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE46F30A9F7D6D9921045CCD /* Pods-jangbaguni.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +383,11 @@
 				DEVELOPMENT_TEAM = TQX48B3375;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = jangbaguni/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "장바구니";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +395,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hoonjoo.jangbaguni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
