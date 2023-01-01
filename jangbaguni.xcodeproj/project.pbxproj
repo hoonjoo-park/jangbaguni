@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7BC2C31FEBF41C65CD8E046F /* Pods_jangbaguni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A00B28FE2AB8B384B96CDB /* Pods_jangbaguni.framework */; };
+		CBD5D4BA29616F9E00FBC9E8 /* OrderCompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D4B929616F9E00FBC9E8 /* OrderCompletedVC.swift */; };
+		CBD5D4BE2961761200FBC9E8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D4BD2961761200FBC9E8 /* Menu.swift */; };
+		CBD5D4C0296177F200FBC9E8 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D4BF296177F200FBC9E8 /* OrderViewModel.swift */; };
+		CBD5D4C32961923800FBC9E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D4C22961923800FBC9E8 /* NetworkManager.swift */; };
+		CBD5D4C6296195B400FBC9E8 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D4C5296195B400FBC9E8 /* ErrorMessage.swift */; };
 		CBD804DF2960488E006E157B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804DE2960488E006E157B /* AppDelegate.swift */; };
 		CBD804E12960488E006E157B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804E02960488E006E157B /* SceneDelegate.swift */; };
-		CBD804E32960488E006E157B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804E22960488E006E157B /* ViewController.swift */; };
+		CBD804E32960488E006E157B /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD804E22960488E006E157B /* OrderVC.swift */; };
 		CBD804E82960488F006E157B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD804E72960488F006E157B /* Assets.xcassets */; };
 		CBD804EB2960488F006E157B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD804E92960488F006E157B /* LaunchScreen.storyboard */; };
 		CBD804F329604947006E157B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD804F229604947006E157B /* GoogleService-Info.plist */; };
@@ -19,10 +24,15 @@
 /* Begin PBXFileReference section */
 		A7A00B28FE2AB8B384B96CDB /* Pods_jangbaguni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jangbaguni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE46F30A9F7D6D9921045CCD /* Pods-jangbaguni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jangbaguni.release.xcconfig"; path = "Target Support Files/Pods-jangbaguni/Pods-jangbaguni.release.xcconfig"; sourceTree = "<group>"; };
+		CBD5D4B929616F9E00FBC9E8 /* OrderCompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedVC.swift; sourceTree = "<group>"; };
+		CBD5D4BD2961761200FBC9E8 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		CBD5D4BF296177F200FBC9E8 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		CBD5D4C22961923800FBC9E8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CBD5D4C5296195B400FBC9E8 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CBD804DB2960488E006E157B /* jangbaguni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jangbaguni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD804DE2960488E006E157B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD804E02960488E006E157B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBD804E22960488E006E157B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBD804E22960488E006E157B /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
 		CBD804E72960488F006E157B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD804EA2960488F006E157B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD804EC2960488F006E157B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +69,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CBD5D4B429616DCD00FBC9E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5D4BF296177F200FBC9E8 /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBD5D4B529616DD700FBC9E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBD5D4B629616DE700FBC9E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5D4BD2961761200FBC9E8 /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBD5D4B829616EF400FBC9E8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBD804E22960488E006E157B /* OrderVC.swift */,
+				CBD5D4B929616F9E00FBC9E8 /* OrderCompletedVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CBD5D4C1296191F700FBC9E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5D4C22961923800FBC9E8 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CBD5D4C42961959D00FBC9E8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5D4C5296195B400FBC9E8 /* ErrorMessage.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CBD804D22960488D006E157B = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +138,15 @@
 		CBD804DD2960488E006E157B /* jangbaguni */ = {
 			isa = PBXGroup;
 			children = (
+				CBD5D4C1296191F700FBC9E8 /* Manager */,
+				CBD5D4B629616DE700FBC9E8 /* Model */,
+				CBD5D4B529616DD700FBC9E8 /* View */,
+				CBD5D4B429616DCD00FBC9E8 /* ViewModel */,
+				CBD5D4B829616EF400FBC9E8 /* ViewController */,
+				CBD5D4C42961959D00FBC9E8 /* Util */,
 				CBD804F229604947006E157B /* GoogleService-Info.plist */,
 				CBD804DE2960488E006E157B /* AppDelegate.swift */,
 				CBD804E02960488E006E157B /* SceneDelegate.swift */,
-				CBD804E22960488E006E157B /* ViewController.swift */,
 				CBD804E72960488F006E157B /* Assets.xcassets */,
 				CBD804E92960488F006E157B /* LaunchScreen.storyboard */,
 				CBD804EC2960488F006E157B /* Info.plist */,
@@ -102,7 +165,6 @@
 				CBD804D72960488E006E157B /* Sources */,
 				CBD804D82960488E006E157B /* Frameworks */,
 				CBD804D92960488E006E157B /* Resources */,
-				D614032313454133F643355C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,23 +244,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D614032313454133F643355C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jangbaguni/Pods-jangbaguni-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,9 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD804E32960488E006E157B /* ViewController.swift in Sources */,
+				CBD5D4C6296195B400FBC9E8 /* ErrorMessage.swift in Sources */,
+				CBD804E32960488E006E157B /* OrderVC.swift in Sources */,
 				CBD804DF2960488E006E157B /* AppDelegate.swift in Sources */,
 				CBD804E12960488E006E157B /* SceneDelegate.swift in Sources */,
+				CBD5D4C32961923800FBC9E8 /* NetworkManager.swift in Sources */,
+				CBD5D4C0296177F200FBC9E8 /* OrderViewModel.swift in Sources */,
+				CBD5D4BA29616F9E00FBC9E8 /* OrderCompletedVC.swift in Sources */,
+				CBD5D4BE2961761200FBC9E8 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
