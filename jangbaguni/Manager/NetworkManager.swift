@@ -24,9 +24,9 @@ class NetworkManager {
         }
         
         do {
-            let decodedData = try decoder.decode([Menu].self, from: data)
+            let decodedData = try decoder.decode([String: [Menu]].self, from: data)
             
-            return decodedData
+            return decodedData["menus"] ?? []
         } catch {
             throw ErrorMessage.defaultError
         }

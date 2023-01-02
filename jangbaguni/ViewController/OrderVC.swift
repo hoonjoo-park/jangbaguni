@@ -12,8 +12,7 @@ class OrderVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(viewModel.menus)
+        view.backgroundColor = .green
     }
 
 }

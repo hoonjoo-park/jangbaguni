@@ -8,7 +8,7 @@
 import Foundation
 
 class OrderViewModel {
-    var menus: [Menu] = []
+    var menus: [Menu]!
     
     init() {
         Task {
